@@ -1,4 +1,4 @@
-fimport pickle 
+import pickle 
 import constants as con  
 from enums import Klasse, Rasse 
 
