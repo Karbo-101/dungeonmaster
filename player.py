@@ -1,4 +1,4 @@
-import pickle 
+fimport pickle 
 import constants as con  
 from enums import Klasse, Rasse 
 
@@ -13,7 +13,8 @@ class Player:
 
     def get_player_name(self):
         return self.name
-    
+    def attack(damage):
+        pass
     def take_potion(self, potion):
         if self.hp_current + potion >= self.hp_max:
             self.hp_current = self.hp_max
