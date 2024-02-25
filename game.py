@@ -1,14 +1,41 @@
-
-class Game():
+import time
+class Game:
     def __init__(self, name):
         self.name = name
+        self.game_duration = None
 
-print('Welcome to Dungeon Master')
+    def get_name(self):
+        return self.name
+    
+    def meassure_game_time(self):
+        t = time.time()
+    
+    def create_game_screen(self):
+        print()
+        print('##########################################################')
+        print('Welcome to ' + self.get_name())
+        print('##########################################################')
+    
+    def save_game(self):
+        print('Game saved')
 
-while True:
-    question = input('> Wollen Sie spielen? ')
+    def load_game(self):
+        pass 
+    
+    def run_game(self):
+        while True:
+            question = input('> Wollen Sie spielen? ')
+            if question == 'y':
+                self.create_game_screen()
+            else:
+                break 
+# Places
 
-    if question == 'y':
-        print('start')
-    else:
-        break 
+orte = {
+    'Players_house': {'North': 'Marktplatz', 'South': 'Taverne'},
+    'Marktplatz': {'Players_house','Gasthaus'}
+}
+
+if __name__ == '__main__':
+    dm = Game('Dungeon Master')
+    Game.run_game(dm)

@@ -10,11 +10,16 @@ class Player:
         self.level = level
         self.hp_current = hp_current
         self.hp_max = hp_max
+        self.current_place = None
 
     def get_player_name(self):
         return self.name
-    def attack(damage):
-        pass
+    def move_to(self, direction):
+        pass 
+    
+    def get_actions(self):
+        pass 
+
     def take_potion(self, potion):
         if self.hp_current + potion >= self.hp_max:
             self.hp_current = self.hp_max

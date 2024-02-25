@@ -12,3 +12,7 @@ class Rasse(Enum):
     Elf = 2
     Tiefling = 3
     Druide = 4
+
+class GameState(Enum):
+    running = 1
+    paused = 2
