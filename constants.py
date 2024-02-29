@@ -9,4 +9,7 @@ HIGH_POTION_HP_REGAIN = 50
 NPCS = ['Händler', 'Bürgermeister Fallenberg', 'Carlo der Schmied']
 
 # Orte
-PLACES = ['Tronjheim', 'Rabenwald', 'Berg der Wahrheit']
+orte = {
+    'Players_house': {'North': 'Marktplatz', 'South': 'Taverne'},
+    'Marktplatz': {'Players_house','Gasthaus'}
+}

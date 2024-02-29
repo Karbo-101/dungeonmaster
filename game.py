@@ -31,10 +31,7 @@ class Game:
                 break 
 # Places
 
-orte = {
-    'Players_house': {'North': 'Marktplatz', 'South': 'Taverne'},
-    'Marktplatz': {'Players_house','Gasthaus'}
-}
+
 
 if __name__ == '__main__':
     dm = Game('Dungeon Master')
