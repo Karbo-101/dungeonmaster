@@ -1,3 +1,6 @@
+# Game constants
+GAME_NAME = 'Dungeon Master'
+
 # grundlegende Charakterwerte
 MIN_HEALTH_START = 50
 
@@ -6,10 +9,10 @@ POTION_HP_REGAIN = 20
 HIGH_POTION_HP_REGAIN = 50 
 
 # NPCs
-NPCS = ['Händler', 'Bürgermeister Fallenberg', 'Carlo der Schmied']
+NPCS = {'Wirt'}
 
 # Orte
 orte = {
-    'Players_house': {'North': 'Marktplatz', 'South': 'Taverne'},
+    'Players_house': {'North': 'Marktplatz', 'South': {'Taverne': {'Wirt'}}},
     'Marktplatz': {'Players_house','Gasthaus'}
 }
