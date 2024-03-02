@@ -1,6 +1,11 @@
 # Game constants
 GAME_NAME = 'Dungeon Master'
+PLAYER_START_PLACE = 'Players_house'
 
+# Character actions
+actions = {
+    'MOVE', 'TALK', 'TAKE', 'USE', 'ATTACK', 'ESCAPE'
+}
 # grundlegende Charakterwerte
 MIN_HEALTH_START = 50
 

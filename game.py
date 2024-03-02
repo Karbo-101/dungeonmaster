@@ -1,4 +1,5 @@
 import time
+from player import Player
 class Game:
     def __init__(self, name):
         self.name = name
@@ -10,11 +11,12 @@ class Game:
     def meassure_game_time(self):
         t = time.time()
     
-    def create_game_screen(self):
+    def create_start_screen(self):
         print()
         print('##########################################################')
         print('Welcome to ' + self.get_name())
         print('##########################################################')
+        
     
     def save_game(self):
         print('Game saved')
@@ -26,7 +28,8 @@ class Game:
         while True:
             question = input('> Wollen Sie spielen? ')
             if question == 'y':
-                self.create_game_screen()
+                while True:
+                    self.create_game_screen()
             else:
                 break 
 # Places

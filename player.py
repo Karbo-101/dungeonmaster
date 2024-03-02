@@ -16,7 +16,9 @@ class Player:
         return self.name
     def move_to(self, direction):
         pass 
-    
+    def get_current_place(self):
+        return self.current_place
+
     def get_actions(self):
         pass 
 
