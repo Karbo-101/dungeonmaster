@@ -9,12 +9,15 @@ actions = {
 # grundlegende Charakterwerte
 MIN_HEALTH_START = 50
 
+# NPC und Orte
+npcs = {
+     'Taverne': {'Wirt', 'Söldner'},
+     'Marktplatz': {'Schmied', 'Händler'}
+}
+
 # Items
 POTION_HP_REGAIN = 20
 HIGH_POTION_HP_REGAIN = 50 
-
-# NPCs
-NPCS = {'Wirt'}
 
 # Orte
 orte = {
