@@ -3,21 +3,20 @@ import constants as con
 from enums import Klasse, Rasse 
 
 class Player:
-    def __init__(self, name, klasse, rasse, level, hp_current, hp_max):
+    def __init__(self, name, current_place):
         self.name = name
-        self.klasse = klasse
-        self.rasse = rasse 
-        self.level = level
-        self.hp_current = hp_current
-        self.hp_max = hp_max
-        self.current_place = None
+        self.current_place = current_place
+
+    def get_places_to_move(self):
+        return con.orte[self.current_place]
+    
+    def get_current_place(self):
+        return self.current_place
 
     def get_player_name(self):
         return self.name
     def move_to(self, direction):
         pass 
-    def get_current_place(self):
-        return self.current_place
 
     def get_actions(self):
         pass 
@@ -34,17 +33,10 @@ class Player:
             print('Player died!')
         else:
             self.hp_current = self.hp_current - damage
-    
-    
-    def print_info(self):
-        print(self.name)
-        print(self.klasse)
-        print(self.rasse)
-        print("level = " + str(self.level))
-        print("hp_current= " + str(self.hp_current))
+
 
 if __name__=='__main__': 
-    tungdil = Player('Tungdil', Klasse.Krieger, Rasse.Mensch, 1, con.MIN_HEALTH_START, con.MIN_HEALTH_START)
+    tungdil = Player('Tungdil', con.PLAYER_START_PLACE)
     path = '/Users/karbo/Documents/dungeonmaster'
     with open('tungdil.pickle', 'wb') as f:
         pickle.dump(tungdil, f)

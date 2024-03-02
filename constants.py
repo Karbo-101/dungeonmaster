@@ -21,6 +21,6 @@ HIGH_POTION_HP_REGAIN = 50
 
 # Orte
 orte = {
-    'Players_house': {'North': 'Marktplatz', 'South': {'Taverne': {'Wirt'}}},
+    'Players_house': {'North': 'Marktplatz', 'South': {'Taverne'}},
     'Marktplatz': {'Players_house','Gasthaus'}
 }

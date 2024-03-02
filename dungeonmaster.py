@@ -6,9 +6,12 @@ from enums import Klasse, Rasse
 
 def main():
     g = Game(con.GAME_NAME)
-    g.run_game()
-    tungdil = Player('Tungdil', Klasse.Krieger, Rasse.Mensch, 1, con.MIN_HEALTH_START, con.MIN_HEALTH_START)
-    tungdil.print_info()
+    tungdil = Player('Tungdil', con.PLAYER_START_PLACE)
+    print('You are playing ' + tungdil.get_player_name())
+    print('You can MOVE to ' + str(tungdil.get_places_to_move()))
+    #print(tungdil.get_current_place())
+   #print('You can MOVE to ' + str(tungdil.get_places_to_move()))
+
 
 
 if __name__=='__main__':
