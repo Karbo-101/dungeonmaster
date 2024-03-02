@@ -17,9 +17,9 @@ npcs = {
 # print(orte['Players_house']['NPC'])
 
 #current_place = 'Players_house'
-for action in actions:
-    if action == 'MOVE':
-        print('you can ' + action + ' to ' + str(orte[current_place]) + '\n')
+# for action in actions:
+#     if action == 'MOVE':
+#         print('you can ' + action + ' to ' + str(orte[current_place]) + '\n')
 
     
     # elif action == 'TALK':

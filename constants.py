@@ -11,6 +11,7 @@ MIN_HEALTH_START = 50
 
 # NPC und Orte
 npcs = {
+     'Players_house': 'NONE',
      'Taverne': {'Wirt', 'Söldner'},
      'Marktplatz': {'Schmied', 'Händler'}
 }
@@ -22,5 +23,5 @@ HIGH_POTION_HP_REGAIN = 50
 # Orte
 orte = {
     'Players_house': {'North': 'Marktplatz', 'South': {'Taverne'}},
-    'Marktplatz': {'Players_house','Gasthaus'}
+    'Marktplatz': {'South': 'Players_house', 'NORTH': 'Gasthaus'}
 }

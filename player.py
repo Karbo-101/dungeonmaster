@@ -15,8 +15,12 @@ class Player:
 
     def get_player_name(self):
         return self.name
+    
+    def get_dialog_partner(self):
+        return con.npcs[self.current_place]
+
     def move_to(self, direction):
-        pass 
+        self.current_place = con.orte[self.current_place][direction]
 
     def get_actions(self):
         pass 
