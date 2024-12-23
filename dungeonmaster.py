@@ -15,7 +15,7 @@ def main():
     print('You are at ' + tungdil.get_current_place())
     print('You can TALK to ' + str(tungdil.get_dialog_partner()))
     print('You can MOVE to ' + str(tungdil.get_places_to_move()))
-   #print('You can MOVE to ' + str(tungdil.get_places_to_move()))
+    print('You can MOVE to ' + str(tungdil.get_places_to_move()))
 
 
 
